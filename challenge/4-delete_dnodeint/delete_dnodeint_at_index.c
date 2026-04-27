@@ -3,12 +3,14 @@
 
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-    dlistint_t *temp = *head;
-    dlistint_t *prev = NULL;
+    dlistint_t *temp;
+    dlistint_t *prev;
     unsigned int i = 0;
 
     if (!head || !*head)
         return (-1);
+
+    temp = *head;
 
     if (index == 0)
     {
