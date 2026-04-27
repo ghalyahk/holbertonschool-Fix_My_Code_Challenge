@@ -1,11 +1,11 @@
 #!/usr/bin/node
 
-const n = parseInt(process.argv[2]);
+const size = parseInt(process.argv[2], 16);
 
-if (isNaN(n)) {
+if (isNaN(size)) {
   process.exit(1);
 }
 
-for (let i = 0; i < n; i++) {
-  console.log('#'.repeat(n));
+for (let i = 0; i < size; i++) {
+  console.log('#'.repeat(size));
 }
